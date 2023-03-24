@@ -10,11 +10,11 @@ export default function SearchBar() {
   };
 
   return (
-    <Container maxWidth="md" sx={{ mt: 20 }}>
+    <Container maxWidth="md" sx={{ mt: 10 }}>
       <TextField
         id="search"
         type="search"
-        label="Search"
+        label="검색어를 입력해주세요"
         value={searchTerm}
         onChange={handleChange}
         sx={{ width: 600 }}
