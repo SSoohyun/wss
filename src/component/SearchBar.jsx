@@ -1,9 +1,10 @@
-import { Container, InputAdornment, TextField } from "@mui/material";
-import { useState } from "react";
-//import SearchIcon from "@mui/icons-material/Search";
+import * as React from 'react';
+import { Container, InputAdornment, TextField } from '@mui/material';
+import { useState } from 'react';
+import SearchIcon from '@mui/icons-material/Search';
 
 export default function SearchBar() {
-  const [searchTerm, setSearchTerm] = useState("");
+  const [searchTerm, setSearchTerm] = useState('');
 
   const handleChange = (event) => {
     setSearchTerm(event.target.value);
@@ -21,7 +22,7 @@ export default function SearchBar() {
         InputProps={{
           endAdornment: (
             <InputAdornment position="end">
-              {/* <SearchIcon /> */}
+              <SearchIcon />
             </InputAdornment>
           ),
         }}

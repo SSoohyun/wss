@@ -9,7 +9,9 @@ import Paper from '@mui/material/Paper';
 import Chip from '@mui/material/Chip';
 
 function createData(num, code, category, name, responsibility) {
-  return { num, code, category, name, responsibility };
+  return {
+    num, code, category, name, responsibility,
+  };
 }
 
 const rows = [
@@ -50,9 +52,9 @@ export default function BasicTable() {
               <TableCell align="center">{row.code}</TableCell>
               <TableCell align="center">
                 {
-                row.category === "프로젝트" ? <Chip label={row.category} size="small"color="error" variant="outlined"/> : <Chip label={row.category} size="small" color="primary" variant="outlined" />
+                row.category === '프로젝트' ? <Chip label={row.category} size="small" color="error" variant="outlined" /> : <Chip label={row.category} size="small" color="primary" variant="outlined" />
                 }
-                </TableCell>
+              </TableCell>
               <TableCell align="center">{row.name}</TableCell>
               <TableCell align="center">{row.responsibility}</TableCell>
             </TableRow>
